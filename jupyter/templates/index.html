@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Code Runner</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5/lib/codemirror.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5/mode/python/python.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5/lib/codemirror.css">
+</head>
+<body>
+    <h1>Python Code Runner</h1>
+    <div id="file-actions">
+        <input type="text" id="filename" placeholder="Enter filename (e.g., my_script.py)">
+        <button onclick="saveFile()">Save</button>
+        <button onclick="deleteFile()">Delete</button>
+        <button onclick="listFiles()">List Files</button>
+    </div>
+    <div id="files-list"></div>
+    <div id="cells"></div>
+    <button id="add-cell" onclick="addCell()">Add Cell</button>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
